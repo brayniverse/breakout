@@ -1,7 +1,13 @@
+/**
+ * Bullets
+ * 
+ * @author: Christopher L Bray <chris@christopherbray.co.uk>
+ */
 var bullets = [];
 
 var Bullet = function(x, y) {
 	
+	// Setup configuration
 	this.x = paddle.x + (paddle.width / 2);
 	this.y = paddle.y;
 	this.width = 3;
@@ -9,6 +15,7 @@ var Bullet = function(x, y) {
 	this.vY = 0;
 	this.active = false;
 
+	// Fire bullet from center of paddle
 	this.fire = function() {
 
 		this.x = paddle.x + (paddle.width / 2);
@@ -24,6 +31,7 @@ var Bullet = function(x, y) {
 
 	}
 
+	// Handle bullet animation
 	this.move = function(x, y) {
 
 		this.y += y;

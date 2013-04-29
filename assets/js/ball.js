@@ -1,4 +1,11 @@
+/**
+ * Ball
+ * 
+ * @author: Christopher L Bray <chris@christopherbray.co.uk>
+ */
 var ball = {
+
+	// Setup configuration
 	x: 0,
 	y: 0,
 	height: 10,
@@ -7,6 +14,7 @@ var ball = {
 	vX: 0,
 	vY: 0,
 
+	// Adjust configuration settings as required
 	init: function() {
 
 		this.x = canvas.width / 2 - (this.width / 2);
@@ -14,6 +22,7 @@ var ball = {
 	
 	},
 
+	// Reset configuration settings
 	reset: function() {
 
 		this.vY = 0;
@@ -22,6 +31,7 @@ var ball = {
 
 	},
 
+	// Handle ball animation
 	move: function() {
 
 		this.x += this.vX;

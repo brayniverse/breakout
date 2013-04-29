@@ -1,5 +1,11 @@
+/**
+ * Levels
+ * 
+ * @author: Christopher L Bray <chris@christopherbray.co.uk>
+ */
 var levels = [];
 
+// Level one map
 levels[1] = [];
 levels[1][0] = [0, 0, 0, 0, 1, 1, 0, 0, 0, 0];
 levels[1][1] = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0];
@@ -11,12 +17,14 @@ levels[1][6] = [0, 0, 1, 1, 1, 1, 1, 1, 0, 0];
 levels[1][7] = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0];
 levels[1][8] = [0, 0, 0, 0, 1, 1, 0, 0, 0, 0];
 
+// Level two map
 levels[2] = [];
 levels[2][0] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 levels[2][0] = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1];
 
 var Level = function() {
 	
+	// Build the bricks array
 	this.load = function(round) {
 
 		var row = 0;
@@ -47,10 +55,13 @@ var Level = function() {
 
 	}
 
+	// Display bricks defined in bricks array
 	this.draw = function() {
 
 		bricks.forEach(function(brick) {
+		
 			if (brick.alive) brick.draw();
+		
 		});
 
 	}

@@ -1,26 +1,30 @@
 /**
- * Bricks
+ * Bonuses
  * 
  * @author: Christopher L Bray <chris@christopherbray.co.uk>
  */
-var bricks = [];
+var bonuses = [];
 
-var Brick = function(x, y, color, bonus) {
+var Bonus = function(x, y, color) {
 
 	// Setup configuration
 	this.x = x;
 	this.y = y;
-	this.width = 80;
+	this.width = 20;
 	this.height = 20;
-	this.alive = true;
 	this.color = color;
-	this.bonus = false;
 
 	this.draw = function() {
 
-		this.bonus = bonus;
 		context.fillStyle = this.color;
 		context.fillRect(this.x, this.y, this.width, this.height);
+
+	}
+
+	// Handle bonus falling animation
+	this.move = function() {
+
+		this.y += 2;
 
 	}
 

@@ -1,5 +1,7 @@
 /**
  * Game
+ * 
+ * @author: Christopher L Bray <chris@christopherbray.co.uk>
  */
 var canvas = $('canvas')[0],
     context = canvas.getContext('2d'),

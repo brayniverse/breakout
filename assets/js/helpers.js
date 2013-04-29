@@ -1,3 +1,10 @@
+/**
+ * Helpers
+ * 
+ * @author: Christopher L Bray <chris@christopherbray.co.uk>
+ */
+
+// Check if two objects are inbound of each other
 function collides(a, b) {
 
 	return a.x < b.x + b.width &&
@@ -7,6 +14,7 @@ function collides(a, b) {
 
 }
 
+// Wipe down the entire canvas
 function clearCanvas() {
 
 	context.fillStyle = '#000';
