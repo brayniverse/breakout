@@ -31,7 +31,7 @@ var Level = function() {
 			levels[round][row].forEach(function(brick) {
 				
 				if (brick != 0) {
-					var bonus = Math.random() < 0.7 ? false : 'double';
+					var bonus = Math.random() < 0.8 ? false : 'double';
 					bricks.push(new Brick(offsetX, offsetY, color, bonus));
 				}
 
