@@ -1,3 +1,6 @@
+/*
+ * Game
+ */
 var canvas = $('canvas')[0],
     context = canvas.getContext('2d'),
     gameLoop = null;
