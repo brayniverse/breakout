@@ -1,4 +1,4 @@
-/*
+/**
  * Game
  */
 var canvas = $('canvas')[0],
