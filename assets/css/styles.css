@@ -1,0 +1,39 @@
+body {
+	background: black;
+	color: white;
+	font-family: monospace;
+	font-size: 18pt;
+	margin: 0;
+	text-align: center;
+}
+
+canvas {
+	border: 30px solid #78AB46;
+	border-bottom: 0;
+	margin-top: 70px;
+}
+
+.logs {
+	margin: 0 auto;
+	width: 850px;
+}
+
+.scoreLog,
+.livesLog {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.livesLog {
+	text-align: left;
+}
+
+.scoreLog {
+	text-align: right;
+}
+
+.logo {
+	position: fixed;
+	right: 17%; bottom: 15%;
+}
